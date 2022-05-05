@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .container{
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        color: white;     
+        
+    }
+    progress{
+        display: block;
+    }
+    .slider{
+        font-size: 32px;
+        margin: 25px ;
+        padding: 20px;
+        text-align: center;
+    }
+    @media only screen and (max-width:700px) {
+        .slider{
+            font-size:20px;
+            margin: auto;
+        }
+        .container{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            color: white;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="slider" id="html">
+            HTML
+            <progress value="80"  max="100" title="80%"></progress>
+        </div>
+        <div class="slider" id="css">
+            CSS
+            <progress value="60" max="100" title="60%"></progress>
+        </div>
+        <div class="slider" id="js">
+            JavaScript
+            <progress value="20" max="100" title="20%"></progress>
+        </div>
+    </div>
+</body>
+</html>
